@@ -1,0 +1,14 @@
+.top{
+    width:100%;
+    height:50px;
+    background:black;
+    
+}
+.top ul{
+    float:center;
+    text-decoration:none;
+}
+
+.top ul li{
+    color:white;
+}
