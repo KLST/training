@@ -2,13 +2,19 @@
     width:100%;
     height:50px;
     background:black;
-    
+    text-align:center;
+
 }
+
 .top ul{
     float:center;
     text-decoration:none;
+    padding-top:12px;
 }
 
 .top ul li{
     color:white;
+   display:inline;
+ padding-left:25px;
+  
 }

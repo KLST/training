@@ -11,7 +11,7 @@ export class SaleService {
     
    }
    getservicemethod(){
-    let url:string = "https://kltech1.sharepoint.com/sites/annotate101/Test/_api/Web/Lists/GetByTitle(' ')/items ";
+    let url:string = "https://kltech1.sharepoint.com/sites/annotate101/Test/_api/Web/Lists/GetByTitle('task1')/items ";
     
    return this.http.get(url)
   }
