@@ -2,12 +2,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule   } from '@angular/router';
+import { AppRoutingModule } from './app-routing.module';
   
 import { AppComponent } from './app.component';
-import { TopComponent } from './top/top.component';
-import { CenterComponent } from './center/center.component';
-import { LeftComponent } from './left/left.component';
-import {SaleService} from './sale.service';
+import { TopComponent } from './component/top/top.component';
+import { CenterComponent } from './component/center/center.component';
+import { LeftComponent } from './component/left/left.component';
+import {SaleService} from './service/sale.service';
 import { HomeComponent } from './home/home.component';
 
 @NgModule({
@@ -21,12 +22,13 @@ import { HomeComponent } from './home/home.component';
   imports: [
     BrowserModule,
     HttpClientModule,
+    AppRoutingModule,
     RouterModule.forRoot( [
       { path: '', redirectTo: '/home', pathMatch: 'full' },
       {path:'home',component:HomeComponent},
       {path:'Top',component:TopComponent},
-      {path:'aboutus',component:CenterComponent},
-      {path:'contactus',component:LeftComponent},
+      {path:'center',component:CenterComponent},
+      {path:'left',component:LeftComponent},
        
       ]  )
   ],

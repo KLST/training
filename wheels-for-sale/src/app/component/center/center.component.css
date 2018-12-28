@@ -1,0 +1,24 @@
+ .container{
+     background-color: rgb(178, 178, 184);
+     margin-left:30%;
+     height:650px;
+     margin-top:10px;
+ }
+ .container1{
+     background-color:rgb(228, 228, 68);
+     margin-left:50px;
+     margin-top:70px;
+     width:400px;
+     height:400px;
+     position: absolute;
+     text-align: center;
+ }
+ .container2{
+    background-color:rgb(228, 228, 68);
+    width:400px;
+    height:400px;
+    margin-left:600px;
+    margin-top:70px;
+    position: absolute;
+    text-align: center;
+}
