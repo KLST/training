@@ -6,6 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./left.component.css']
 })
 export class LeftComponent implements OnInit {
+  values = [
+    {name:"Company "},
+    {  name: "Tata" },
+    {  name: "Mahindra" },
+    {  name: "Ford" }
+  ];
 
   constructor() { }
 

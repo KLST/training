@@ -26,10 +26,7 @@ import { HomeComponent } from './home/home.component';
     RouterModule.forRoot( [
       { path: '', redirectTo: '/home', pathMatch: 'full' },
       {path:'home',component:HomeComponent},
-      {path:'Top',component:TopComponent},
-      {path:'center',component:CenterComponent},
-      {path:'left',component:LeftComponent},
-       
+      {path:'product/:type',component:CenterComponent},       
       ]  )
   ],
   providers: [SaleService],
