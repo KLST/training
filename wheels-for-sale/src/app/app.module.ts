@@ -10,7 +10,6 @@ import { CarsComponent } from './pages/cars/cars.component';
 import { BikesComponent } from './pages/bikes/bikes.component';
 import { VehicleService } from './service/vehicle.service';
 
-
 @NgModule({
   declarations: [
     AppComponent,
