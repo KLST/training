@@ -15,11 +15,12 @@ export class CarsComponent {
   bikevalues:any;
   carmodelArray:any = [];
   imageArray:any=[];
+  carmodal:any=[];
 
 constructor( public vehicleService: VehicleService){
  
 this.fetchfiltercar(); 
-this.fetchfiltercar();
+ 
 }
  
  
@@ -35,22 +36,31 @@ fetchfiltercar1(val){
      }
    }
  }
-fetchfiltercar(){
-  this.vehicleService.filtercar().subscribe((res:any) =>{
-  console.log(res);
-  this.carvalues = res.value;
-  console.log(this. carvalues)
-  console.log(this. carvalues[0].Id )
-  
-  });
-  } 
+
   
   speciimage(data){
     this.imageArray=data;
     console.log(data)
   
   }
-     
+  fetchfiltercar(){
+    this.vehicleService.filtercar().subscribe((res:any) =>{
+    console.log(res);
+    this.carvalues=res.value
+    let unique_array = [] 
+      for(let i = 0;i <res.value.length; i++)
+      { if(unique_array.indexOf(res.value[i].f3p1) == -1)
+        { 
+          unique_array.push(res.value[i].f3p1);
+          this.carmodal.push(res.value[i]);
+         
+         } 
+      } 
+      return unique_array  
+   
+    
+    });
+    }  
  
 }
 

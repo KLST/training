@@ -12,8 +12,9 @@ export class BikesComponent {
   title = 'sharepoint';
   listvalues:any;
   carvalues:any;
-  bikevalues:any;
+  bikevalues:any=[];
   bikemodelArray:any = [];
+  bikemodal:any=[];
   imageArray:any=[];
   
 
@@ -44,12 +45,20 @@ fetchfilterbike1(val){
   }
 }
 fetchfilterbike(){
-//console.log(val);
 this.vehicleService.filterbike().subscribe((res:any) =>{
 console.log(res);
-this.bikevalues = res.value;
-console.log(this.bikevalues)
-console.log(this.bikevalues[4].oc6c )
+this.bikevalues=res.value
+let unique_array = [] 
+  for(let i = 0;i <res.value.length; i++)
+  { if(unique_array.indexOf(res.value[i].f3p1) == -1)
+    { 
+      unique_array.push(res.value[i].f3p1);
+      this.bikemodal.push(res.value[i]);
+     
+     } 
+  } 
+  return unique_array 
+
 
 });
 }

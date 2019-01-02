@@ -6,12 +6,14 @@
           <label>Select Company: </label>
           <select (change)="fetchfilterbike1($event.target.value)">
               <option value="0">--All--</option>
-              <option *ngFor="let list of  bikevalues " value={{list.f3p1}}>
+              <option *ngFor="let list of  bikemodal " value={{list.f3p1}}>
                   {{list.f3p1}}
               </option>
           </select>
       </div>
-      <div>
+      <div> 
+          <br/>
+          <br/>
         <label> Modal: </label>
       
              
@@ -19,6 +21,7 @@
 
                <div (click)="speciimage(list1)"> {{list1.modal}}</div>
             </div>
+  
            
     </div>     
     
@@ -34,9 +37,7 @@
                 <b>Specification:  </b>  <br/>
              {{imageArray.specfi}}
              </div>
-<div>
-
-</div>
+ 
     </div>
 </div>
  

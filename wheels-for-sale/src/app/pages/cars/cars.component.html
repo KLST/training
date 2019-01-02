@@ -6,7 +6,7 @@
           <label>Select Company: </label>
           <select (change)="fetchfiltercar1($event.target.value)">
               <option value="0">--All--</option>
-              <option *ngFor="let list of  carvalues " value={{list.f3p1}}>
+              <option *ngFor="let list of carmodal " value={{list.f3p1}}>
                   {{list.f3p1}}
               </option>
           </select>
@@ -35,9 +35,7 @@
                <b>Specification:  </b>  <br/>
             {{imageArray.specfi}}
             </div>
-<div>
-
-</div>
+  
     </div>
 </div>
  
