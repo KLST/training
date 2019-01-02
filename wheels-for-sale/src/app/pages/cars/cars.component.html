@@ -1,0 +1,43 @@
+ 
+<div class="row"  >
+    <div class="col-sm-4">
+      <div class="select">    
+        <div>
+          <label>Select Company: </label>
+          <select (change)="fetchfiltercar1($event.target.value)">
+              <option value="0">--All--</option>
+              <option *ngFor="let list of  carvalues " value={{list.f3p1}}>
+                  {{list.f3p1}}
+              </option>
+          </select>
+      </div>
+      <div>
+        <label> Modal: </label>
+      
+             
+            <div *ngFor="let list1 of  carmodelArray">
+
+               <div (click)="speciimage(list1)"> {{list1.modal}}</div>
+            </div>
+           
+    </div>     
+    
+   
+</div>
+    </div>
+  <div class="col-sm-8">
+    <b>   Image </b>
+          <div>
+            <img [src]="imageArray.image" width="600" height="400" />
+          </div>
+          
+          <div class="container"> 
+               <b>Specification:  </b>  <br/>
+            {{imageArray.specfi}}
+            </div>
+<div>
+
+</div>
+    </div>
+</div>
+ 
