@@ -1,0 +1,11 @@
+ 
+ .container{
+     border:3px solid rgb(177, 174, 174);
+     width:400px;
+     background-color: white;
+     margin-right:300px;
+ }
+  
+  .img{
+    margin-left:210px;   
+  }

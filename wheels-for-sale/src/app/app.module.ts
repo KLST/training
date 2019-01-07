@@ -9,6 +9,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { VehicleService } from './service/vehicle.service';
  import{ ProductComponent} from './pages/product/product.component';
 import { LeftComponent } from './left/left.component';
+import { CenterComponent } from './center/center.component';
  
   
 @NgModule({
@@ -18,6 +19,7 @@ import { LeftComponent } from './left/left.component';
     HomeComponent,
    ProductComponent,
    LeftComponent,
+   CenterComponent,
  
  
  

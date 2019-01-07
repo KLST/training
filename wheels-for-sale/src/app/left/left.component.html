@@ -11,7 +11,7 @@
                        </option>
                    </select>
                </div>
-            <div>
+         </div>  
               <br/>
               <br/>
      
@@ -20,23 +20,13 @@
                     <label> Modal: </label>
                 <div *ngFor="let lists of  modelArray">
              <div (click)="speciimage(lists)"><p>{{lists.modal}}</p> </div>
-                </div>
+             
                 </div>
             </div>     
        
-     </div>
-         </div>
-             <div class="col-sm-8">
-                 <br/>
-                 <br/>
-                 <div>
-                <img [src]="imageArray.image" width="600" height="400" />
-             </div>
-             <br/>
-                <div class="container"> 
-                   <b>Specification:  </b>  <br/><br/>
-                   {{imageArray.specfi}}
-               </div>
-         </div>
+ </div>
+          <div class="col-sm-8"  >
+               <app-center [imgData]="imageArray" ></app-center> 
+          </div>
+   
 </div>
-     
