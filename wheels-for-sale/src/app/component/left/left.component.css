@@ -15,15 +15,20 @@
 }
  
  .modalcontainer{
-    border:3px solid  rgb(177, 174, 174);
+    border:3px solid  rgb(250, 246, 246);
     width:170px;
-    background-color: rgb(185, 224, 240);
+    background-color: rgb(253, 245, 171);
     float:left;
     margin-left:150px;
+    text-align:justify;
+    
+}
+.modalcontainer p{
+ color:blue;
 }
  
 p:hover {
-    background-color: rgb(231, 237, 240);
+    background-color: rgb(209, 237, 250);
   }
 
   

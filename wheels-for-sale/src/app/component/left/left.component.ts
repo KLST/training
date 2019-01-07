@@ -46,7 +46,7 @@ export class LeftComponent implements OnInit {
       });
       }  
   
-  filter(val){
+stored(val){
     this.modelArray=[];
      console.log(this.vehiclevalues)
     for (var i = 0; i < this.vehiclevalues.length; i++) 

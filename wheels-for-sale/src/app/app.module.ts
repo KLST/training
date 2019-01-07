@@ -4,12 +4,12 @@ import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
+import { NavbarComponent } from './component/navbar/navbar.component';
 import { HomeComponent } from './pages/home/home.component';
 import { VehicleService } from './service/vehicle.service';
- import{ ProductComponent} from './pages/product/product.component';
-import { LeftComponent } from './left/left.component';
-import { CenterComponent } from './center/center.component';
+import{ ProductComponent} from './pages/product/product.component';
+import { LeftComponent } from './component/left/left.component';
+import { CenterComponent } from './component/center/center.component';
  
   
 @NgModule({
@@ -20,10 +20,7 @@ import { CenterComponent } from './center/center.component';
    ProductComponent,
    LeftComponent,
    CenterComponent,
- 
- 
- 
-  
+   
   ],
   imports: [
     BrowserModule,

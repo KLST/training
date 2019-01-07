@@ -4,7 +4,7 @@
          <div class="select">    
                <div>
                     <label>Select Company: </label>
-                    <select (change)="filter($event.target.value)">
+                    <select (change)="stored($event.target.value)">
                        <option value="0">--All--</option>
                        <option *ngFor="let list of modal " value={{list.f3p1}}>
                        {{list.f3p1}}
@@ -18,6 +18,7 @@
           
             <div class="modalcontainer"> 
                     <label> Modal: </label>
+                    <br/>
                 <div *ngFor="let lists of  modelArray">
              <div (click)="speciimage(lists)"><p>{{lists.modal}}</p> </div>
              

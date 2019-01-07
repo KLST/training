@@ -1,0 +1,14 @@
+ 
+ .container{
+     border:3px solid rgb(255, 248, 248);
+     width:400px;
+     background-color: rgb(209, 210, 212);
+     margin-right:300px;
+ }
+  
+ .container p{
+   color:rgb(31, 14, 126);
+ }
+  .img{
+    margin-left:210px;   
+  }
