@@ -1,0 +1,35 @@
+.col-sm-4{
+    background-color: rgb(209, 237, 250);
+    height:630px;
+    border-right: 6px solid rgb(255, 253, 253);
+} 
+ .col-sm-8{
+    background-color: rgb(209, 237, 250);
+    height:630px;
+   
+}
+.col-sm-8 img{
+margin-left:200px;
+}
+.select{
+   margin-top:80px;
+   margin-left:150px;
+}
+ .container{
+     border:3px solid rgb(177, 174, 174);
+     width:400px;
+     background-color: white;
+     margin-right:300px;
+ }
+ .modalcontainer{
+    border:3px solid  rgb(177, 174, 174);
+    width:200px;
+    background-color: rgb(185, 224, 240);
+    float:left;
+}
+ 
+p:hover {
+    background-color: rgb(231, 237, 240);
+  }
+
+  

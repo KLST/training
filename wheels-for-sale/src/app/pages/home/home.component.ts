@@ -12,11 +12,15 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
   }
-  public cars():void{
-    this.router.navigate(['/cars']);
+  public cars(product):void{
+    
+    this.router.navigate(['/product/car']);
   }
-  public bikes():void{
-    this.router.navigate(['/bikes']);
+  public bikes(product):void{
+    this.router.navigate(['/product/bike']);
   }
+  
+ 
+ 
 
 }

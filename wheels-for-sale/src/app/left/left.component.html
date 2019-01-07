@@ -1,0 +1,42 @@
+  
+<div class="row"  >
+    <div class="col-sm-4">
+         <div class="select">    
+               <div>
+                    <label>Select Company: </label>
+                    <select (change)="filter($event.target.value)">
+                       <option value="0">--All--</option>
+                       <option *ngFor="let list of modal " value={{list.f3p1}}>
+                       {{list.f3p1}}
+                       </option>
+                   </select>
+               </div>
+            <div>
+              <br/>
+              <br/>
+     
+          
+            <div class="modalcontainer"> 
+                    <label> Modal: </label>
+                <div *ngFor="let lists of  modelArray">
+             <div (click)="speciimage(lists)"><p>{{lists.modal}}</p> </div>
+                </div>
+                </div>
+            </div>     
+       
+     </div>
+         </div>
+             <div class="col-sm-8">
+                 <br/>
+                 <br/>
+                 <div>
+                <img [src]="imageArray.image" width="600" height="400" />
+             </div>
+             <br/>
+                <div class="container"> 
+                   <b>Specification:  </b>  <br/><br/>
+                   {{imageArray.specfi}}
+               </div>
+         </div>
+</div>
+     

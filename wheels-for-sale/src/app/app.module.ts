@@ -6,18 +6,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './pages/home/home.component';
-import { CarsComponent } from './pages/cars/cars.component';
-import { BikesComponent } from './pages/bikes/bikes.component';
 import { VehicleService } from './service/vehicle.service';
-
+ import{ ProductComponent} from './pages/product/product.component';
+import { LeftComponent } from './left/left.component';
+ 
+  
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    CarsComponent,
-    BikesComponent,
-   
+   ProductComponent,
+   LeftComponent,
+ 
+ 
+ 
+  
   ],
   imports: [
     BrowserModule,
@@ -27,8 +31,10 @@ import { VehicleService } from './service/vehicle.service';
     RouterModule.forRoot( [
       { path: '', redirectTo: '/home', pathMatch: 'full' },
       {path:'home',component:HomeComponent},
-      {path:'cars',component:CarsComponent},
-      {path:'bikes',component:BikesComponent},
+      { path:'product/:type', component: ProductComponent },
+ 
+      // {path:'cars',component:CarsComponent},
+      // {path:'bikes',component:BikesComponent}
         
       ]  )
   ],
