@@ -23,12 +23,29 @@
     text-align:justify;
     
 }
-.modalcontainer p{
+ .modalcontainer p{
  color:blue;
+ padding-left:10px;
 }
+
+.modalcontainer label{
+     padding-left:10px;
+   }
  
 p:hover {
     background-color: rgb(209, 237, 250);
   }
-
-  
+  @media only screen and (max-width: 768px) {
+    .modalcontainer{
+        width:170px;
+        float:left;
+        margin-left:50px;
+     
+    } 
+ }
+ @media only screen and (max-width: 768px) {
+ .select{
+    margin-top:80px;
+    margin-left:50px;
+ }
+}

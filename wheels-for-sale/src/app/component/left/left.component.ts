@@ -57,17 +57,11 @@ stored(val){
        }
      }
    }
-   
- 
+    
     speciimage(data){
       this.imageArray=data;
       console.log(data)
       
           }
-   
- 
-   
-       
-
 }
   

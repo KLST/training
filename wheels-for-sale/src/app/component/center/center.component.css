@@ -12,3 +12,9 @@
   .img{
     margin-left:210px;   
   }
+  @media only screen and (max-width: 768px) {
+    .img{
+      margin-left:10px; 
+      width:200px;
+         }
+ }

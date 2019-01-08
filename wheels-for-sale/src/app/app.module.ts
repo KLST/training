@@ -31,10 +31,7 @@ import { CenterComponent } from './component/center/center.component';
       { path: '', redirectTo: '/home', pathMatch: 'full' },
       {path:'home',component:HomeComponent},
       { path:'product/:type', component: ProductComponent },
- 
-      // {path:'cars',component:CarsComponent},
-      // {path:'bikes',component:BikesComponent}
-        
+  
       ]  )
   ],
   
