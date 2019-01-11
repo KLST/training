@@ -6,46 +6,95 @@
  .col-sm-8{
     background-color: rgb(209, 237, 250);
     height:630px;
-   
+ 
 }
  
 .select{
    margin-top:80px;
    margin-left:150px;
+ 
 }
  
  .modalcontainer{
-    border:3px solid  rgb(250, 246, 246);
-    width:170px;
-    background-color: rgb(253, 245, 171);
+    border:3px solid  rgb(209, 237, 250);
+    width:195px;
+    background-color:  rgb(209, 237, 250);
     float:left;
-    margin-left:150px;
-    text-align:justify;
+    margin-left:130px;
     
-}
- .modalcontainer p{
- color:blue;
- padding-left:10px;
-}
-
-.modalcontainer label{
-     padding-left:10px;
-   }
- 
-p:hover {
-    background-color: rgb(209, 237, 250);
+  
+} 
+.nav-tabs > li > a{
+    border-radius: 5px;
+    background-color:rgb(209, 237, 250); 
   }
+
+  .nav-tabs > li > a:hover{
+    background-color: #007BFF !important;
+      border-radius: 5px;
+      color:#fff;
+      border:1px solid #007BFF;
+  }
+   
+
+     .nav-tabs > li.active > a,
+     .nav-tabs > li.active > a:focus,
+     .nav-tabs > li.active > a:hover{
+      background-color: rgb(16, 71, 107) !important;
+      color:#fff;
+      border:2px solid #3F515F;
+  }
+ 
+.modalcontainer label{
+     padding-left:16px;
+   }
+
+   .modalcontainer a {
+    text-align:justify;
+    width:150px;
+    color:rgb(6, 108, 218);
+ 
+}
+ 
   @media only screen and (max-width: 768px) {
     .modalcontainer{
         width:170px;
         float:left;
-        margin-left:50px;
-     
+        margin-left:30px;
+      
     } 
+    .select{
+        margin-top:80px;
+        margin-left:50px;
+     }
  }
- @media only screen and (max-width: 768px) {
- .select{
-    margin-top:80px;
-    margin-left:50px;
+ 
+ 
+@media only screen and (max-width: 425px) {
+    .col-sm-4{
+        height:280px;
+        
+    } 
+     .col-sm-8{
+        height:630px;
+        width:99%
+    }
+   }
+
+   @media only screen and (max-width:896px) {
+    .modalcontainer{
+        width:170px;
+        float:left;
+        margin-left:30px;
+      
+    } 
+    .select{
+        margin-top:80px;
+        margin-left:50px;
+     }
  }
-}
+
+
+
+
+ 

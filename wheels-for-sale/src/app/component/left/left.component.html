@@ -1,29 +1,43 @@
 <div class="row"  >
-    <div class="col-sm-4">
-       <div class="select">
-          <div>
-             <label>Select Company: </label>
-             <select (change)="stored($event.target.value)">
-                <option value="0">--All--</option>
-                <option *ngFor="let list of modal " value={{list.f3p1}}>
-                   {{list.f3p1}}
-                </option>
-             </select>
-          </div>
-       </div>
-       <br/>
-       <br/>
-       <div class="modalcontainer">
-          <label> Modal: </label>
-          <br/>
-          <div *ngFor="let lists of  modelArray">
-             <div (click)="speciimage(lists)">
-                <p>{{lists.modal}}</p>
-             </div>
-          </div>
-       </div>
-    </div>
-    <div class="col-sm-8"  >
-       <app-center [imgData]="imageArray" ></app-center>
-    </div>
- </div>
+      <div class="col-sm-4">
+         <div class="select">
+            <label>Select Company </label>
+            <div class="row">
+               <div class="col-xs-6">
+                  <div class="form-group">
+                     <select class="form-control  " id="sel3" (change)="stored($event.target.value)">
+                        <option value="0">--All--</option>
+                        <option *ngFor="let list of modal " value={{list.f3p1}}>
+                           {{list.f3p1}}
+                        </option>
+                     </select>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <br/>
+         <br/>
+         <div class="modalcontainer">
+            <label> Modal </label> 
+            <br/>
+            <div class="col-xs-3">
+               <div *ngFor="let lists of  modelArray">
+                  <div (click)="speciimage(lists)">
+                     <ul class="nav nav-tabs tabs-right ">
+                        <li ><a data-toggle="tab" >{{lists.modal}}</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <br/>
+            </div>
+         </div>
+
+      </div>
+ 
+      <div class="col-sm-8"  >
+         <app-center [imgData]="imageArray "  ></app-center>
+      </div>
+   </div>
+ 
+ 
+   

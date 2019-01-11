@@ -7,12 +7,15 @@ import { Component, OnInit ,Input } from '@angular/core';
   styleUrls: ['./center.component.css']
 })
 export class CenterComponent implements OnInit {
-  @Input() imgData:any;
+  @Input() imgData:any
   
-  constructor() { }
-
+  constructor() { 
+  
+  }
+ 
   ngOnInit() {
     
   }
-
+ 
+  
 }

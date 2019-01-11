@@ -25,12 +25,11 @@ import { CenterComponent } from './component/center/center.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
- 
     HttpClientModule,
     RouterModule.forRoot( [
-      { path: '', redirectTo: '/home', pathMatch: 'full' },
+      {path: '', redirectTo: '/home', pathMatch: 'full' },
       {path:'home',component:HomeComponent},
-      { path:'product/:type', component: ProductComponent },
+      {path:'product/:type', component: ProductComponent },
   
       ]  )
   ],

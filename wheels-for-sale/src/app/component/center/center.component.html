@@ -1,12 +1,40 @@
 <div>
-  <br/>
-  <br/>
-  <div class="img">
-     <img [src]="imgData.image" width="600" height="400" />
-  </div>
-  <br/>
-  <div class="container">
-     <b>Specification:  </b>  <br/><br/>
-     <p>   {{imgData.specfi}}  </p>
-  </div>
-</div>
+    <br/>
+    <br/>
+    <div class="img">
+       <!-- <img [src]="imgData.image"  class="img-rounded"  alt="image" width="600" height="400"   /> -->
+       <div class="block">
+          <img title="" alt="Image" [src]="imgData.image" class="img-rounded" width="600" height="400" >
+          <div class="block-caption">
+             {{imgData.modal}}  <img src="https://media2.giphy.com/media/WwBDGoFKDQDte0ZKPu/giphy.gif?cid=3640f6095c3755654252713977790295" width="80px" height="60px"/>
+          </div>
+       </div>
+    </div>
+    <br/>
+    <div class="row">
+       <div class="col-xs-6">
+          <div class="container">
+             <b>Specification:  </b>  <br/>  <br/> 
+             <table class="table table-hover">
+                <thead>
+                   <tr   class="info">
+                      <th>EngineCC</th>
+                      <th>Width</th>
+                      <th>Height</th>
+                      <th>Fuel</th>
+                      <th>Kerb Weight </th>
+                   </tr>
+                </thead>
+                <tbody>
+                   <tr class="success">
+                      <td>{{imgData.specfi.cc}} </td>
+                      <td>{{imgData.specfi.width}} </td>
+                      <td>{{imgData.specfi.height}} </td>
+                      <td>{{imgData.specfi.fuel}} </td>
+                      <td>{{imgData.specfi.kerbweight}} </td>
+                   </tr>
+                </tbody>
+             </table>
+          </div>
+       </div>
+    </div>

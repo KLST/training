@@ -2,6 +2,7 @@ import{Router} from '@angular/router';
 import { Component,OnInit} from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
 import { VehicleService } from 'src/app/service/vehicle.service';
+ 
 @Component({
   selector: 'app-left',
   templateUrl: './left.component.html',
@@ -12,19 +13,21 @@ export class LeftComponent implements OnInit {
     vehiclevalues:any=[];
     modelArray:any = [];
     imageArray:any=[];
-  
+    specifiArray:any=[];
+   
     constructor(private route:ActivatedRoute,public vehicleService: VehicleService,
-      private router:Router)
+      private router:Router )
      {   this.route.params.subscribe( (params) => {
 
       console.log(params)
       this.fetchfilter(params.type,"")
      }); 
+     
       } 
     ngOnInit() {
       
     }
-    
+
     fetchfilter(type,mname){
       this. vehiclevalues=[];
       this.modelArray=[];
@@ -46,6 +49,7 @@ export class LeftComponent implements OnInit {
       });
       }  
   
+      
 stored(val){
     this.modelArray=[];
      console.log(this.vehiclevalues)
@@ -53,15 +57,19 @@ stored(val){
     { 
        if(this.vehiclevalues[i].f3p1==val){                        
          console.log(this.vehiclevalues[i])
-          this.modelArray.push({'modal':this.vehiclevalues[i].ldde ,'specfi':this.vehiclevalues[i].OData__x006e_ih5,'image':this.vehiclevalues[i].oc6c});
+          this.modelArray.push({'modal':this.vehiclevalues[i].ldde,'specfi':JSON.parse(this.vehiclevalues[i].OData__x006e_ih5),'image':this.vehiclevalues[i].oc6c});
        }
      }
    }
     
     speciimage(data){
+
       this.imageArray=data;
       console.log(data)
-      
-          }
+      console.log(this.imageArray.specfi.width)
+       }
+        
+    
+   
 }
   
